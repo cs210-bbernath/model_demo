@@ -3,7 +3,7 @@ import re
 from openai import OpenAI
 import os
 
-os.environ["OPEN_AI_API_KEY"] = st.secrets["openai_api_key"]
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 # Function to prompt GPT-4 based on mode
 def get_gpt4_response(prompt, mode):
     if mode == "Foundation model":
